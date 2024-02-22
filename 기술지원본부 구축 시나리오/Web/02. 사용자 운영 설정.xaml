@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_1__로그인" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1102,571" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_1__로그인" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1102,4713" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -82,21 +82,28 @@
       <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_1__로그인" sap:VirtualizedContainerService.HintSize="546,5200" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_1__로그인" sap:VirtualizedContainerService.HintSize="546,4648" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: i-oneNGS" sap:VirtualizedContainerService.HintSize="484,5089" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="167a921b-102b-4c32-bb4f-02bb7560aca6" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: i-oneNGS" sap:VirtualizedContainerService.HintSize="484,4537" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="167a921b-102b-4c32-bb4f-02bb7560aca6" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,4872" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,4320" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -222,52 +229,17 @@
                 <uix:TargetAnchorable BrowserURL="https://172.16.10.103:9000/access/user/userList.do" CvElementArea="469, 252, 94, 38" CvTextArea="489, 263, 53, 16" CvTextArgument="NSe1OI" CvType="Button" DesignTimeRectangle="471, 254, 90, 35" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'중복확인'" FullSelectorArgument="&lt;webctrl id='IdDupCheck' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='IdDupCheck' tag='BUTTON' type='button' class='btn basic' aaname='중복확인' check:innerText='중복확인' /&gt;" Guid="d7fb1e8d-c5cf-4ab9-b66d-77de317eba04" InformativeScreenshot="bc118cbfbc69dfe156792d4e37d9aa00.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='i-oneNGS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '확인'" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="167a921b-102b-4c32-bb4f-02bb7560aca6" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '확인'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="167a921b-102b-4c32-bb4f-02bb7560aca6" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="https://172.16.10.103:9000/access/user/userList.do" CvElementArea="913, 664, 109, 51" CvType="Button" DesignTimeRectangle="918, 669, 99, 42" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'확인'" FullSelectorArgument="&lt;webctrl aaname='확인' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='확인' type='button' tag='BUTTON' class='swal2-confirm swal2-styled' check:innerText='확인' /&gt;" Guid="22d5a261-1321-4a54-b243-e6aecba47acc" InformativeScreenshot="c88223325036e5bd0e9d1b113cf7818f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='i-oneNGS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="https://172.16.10.103:9000/access/user/userList.do" CvElementArea="913, 664, 109, 51" CvType="Button" DesignTimeRectangle="918, 669, 99, 42" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'확인'" FullSelectorArgument="&lt;webctrl aaname='확인' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='확인' type='button' tag='BUTTON' class='swal2-confirm swal2-styled' check:innerText='확인' /&gt;" Guid="22d5a261-1321-4a54-b243-e6aecba47acc" InformativeScreenshot="a2bfd7e20bc07f2cfac9816517e27ef8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='i-oneNGS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="940, 620, 180, 21" CvTextArgument="18501 OlT| %G4C." CvType="Text" DesignTimeRectangle="732, 617, 472, 27" ElementType="Text" FriendlyName="'아이디에 숫자가 포함되어 있지 않습니다.'" FullSelectorArgument="&lt;webctrl aaname='아이디에 숫자가 포함되어 있지 않습니다.' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='아이디에 숫자가 포함되어 있지 않습니다.' tag='DIV' type='' class='' check:innerText='아이디에 숫자가 포함되어 있지 않습니다.' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
               </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="엘리먼트 '아이디에 숫자가 포함되어 있지 않습니다.'" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Target>
-                    <uix:TargetAnchorable BrowserURL="https://172.16.10.103:9000/access/user/userList.do" CvTextArea="946, 520, 44, 43" CvTextArgument="X" CvType="Text" DesignTimeRectangle="950, 524, 37, 37" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;span' idx='2' isleaf='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='swal2-x-mark-line-right' isleaf='1' tag='SPAN' aaname='' /&gt;" Guid="04e3e500-f1ed-4321-a0ec-a12b8f6e5db9" InformativeScreenshot="34e9feef9eb30ece5f4d3af22747febd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='i-oneNGS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                          <uix:Target CvTextArea="940, 620, 180, 21" CvTextArgument="18501 Ol7| %G4C." CvType="Text" DesignTimeRectangle="732, 617, 472, 27" ElementType="Text" FriendlyName="'아이디에 숫자가 포함되어 있지 않습니다.'" FullSelectorArgument="&lt;webctrl aaname='아이디에 숫자가 포함되어 있지 않습니다.' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='아이디에 숫자가 포함되어 있지 않습니다.' tag='DIV' type='' class='' check:innerText='아이디에 숫자가 포함되어 있지 않습니다.' /&gt;" SearchSteps="FuzzySelector, CV" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:VerifyExecutionOptions.Target>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '비밀번호'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_6" IsPassword="True" ScopeIdentifier="167a921b-102b-4c32-bb4f-02bb7560aca6" Text="qwe123456" Version="V3">
-              <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="https://172.16.10.103:9000/access/user/userList.do" CvElementArea="585, 252, 237, 37" CvType="InputBox" DesignTimeRectangle="586, 254, 234, 34" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control' aaname='비밀번호 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' /&gt;" Guid="22126883-483c-45a6-a5d3-7f9f09fc3e2c" InformativeScreenshot="69dc74dba9651a5225199ec9ce63ce3f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='i-oneNGS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CvTextArea="585, 230, 64, 14" CvTextArgument="HgHs i" CvType="Text" DesignTimeRectangle="586, 230, 234, 24" ElementType="Text" FriendlyName="'비밀번호'" FullSelectorArgument="&lt;webctrl aaname='비밀번호 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='비밀번호 &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' tag='LABEL' type='' class='pdb-10 block' check:innerText='비밀번호' /&gt;" SearchSteps="FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NTypeInto.Target>
-            </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '비밀번호 확인'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_7" IsPassword="True" ScopeIdentifier="167a921b-102b-4c32-bb4f-02bb7560aca6" Text="qwe123456" Version="V3">
-              <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="https://172.16.10.103:9000/access/user/userList.do" CvElementArea="833, 253, 237, 37" CvType="InputBox" DesignTimeRectangle="835, 255, 234, 34" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT re_password'" FullSelectorArgument="&lt;webctrl id='re_password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='re_password' tag='INPUT' type='password' class='form-control inline ' aaname='비밀번호 확인' /&gt;" Guid="ffcfc5ad-db14-429e-83a5-b1803a3a4238" InformativeScreenshot="88d026b9eea5d08007229c8f793bd791.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='i-oneNGS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CvTextArea="834, 230, 70, 14" CvTextArgument="HgHs sol" CvType="Text" DesignTimeRectangle="835, 230, 439, 24" ElementType="Text" FriendlyName="'비밀번호 확인'" FullSelectorArgument="&lt;webctrl aaname='비밀번호 확인' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='비밀번호 확인' tag='LABEL' type='' class='pdb-10 block' check:innerText='비밀번호 확인' /&gt;" SearchSteps="FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NTypeInto.Target>
-            </uix:NTypeInto>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '로그 아웃'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="167a921b-102b-4c32-bb4f-02bb7560aca6" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://172.16.10.103:9000/access/user/userList.do" CvTextArea="20, 716, 48, 14" CvTextArgument="21 012" CvType="Text" DesignTimeRectangle="8, 675, 72, 72" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'로그 아웃'" FullSelectorArgument="&lt;webctrl aaname='로그 아웃' parentid='gnb' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='로그 아웃' parentid='gnb' tag='A' type='' class='' check:innerText='로그 아웃' /&gt;" Guid="9908b764-09a4-4827-aa85-d24bbfe9454e" InformativeScreenshot="b2821ec4dff5d520d6551ec75dd40b39.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='i-oneNGS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />

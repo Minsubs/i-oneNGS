@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="_3__라이선스_등록" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1102,2854" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="_3__라이선스_등록" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1102,2984" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -91,19 +91,19 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_3__라이선스_등록" sap:VirtualizedContainerService.HintSize="546,2789" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_3__라이선스_등록" sap:VirtualizedContainerService.HintSize="546,2919" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: i-oneNGS" sap:VirtualizedContainerService.HintSize="484,2678" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="167a921b-102b-4c32-bb4f-02bb7560aca6" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: i-oneNGS" sap:VirtualizedContainerService.HintSize="484,2808" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="167a921b-102b-4c32-bb4f-02bb7560aca6" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,2461" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,2591" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -156,17 +156,18 @@
                 <uix:TargetAnchorable BrowserURL="https://172.16.10.103:9000/" CvTextArea="96, 458, 37, 14" CvTextArgument="7||A|Ll" CvType="Text" DesignTimeRectangle="107, 446, 215, 24" DesignTimeScaleFactor="1" FriendlyName="'정보 관리'" FullSelectorArgument="&lt;webctrl parentid='tui-tree-node-82' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='tui-tree-node-82' tag='SPAN' type='' class='tui-tree-text tui-js-tree-text' aaname='정보 관리' check:innerText='정보 관리' /&gt;" Guid="f6519d85-258d-4383-a90e-006fbeab187d" InformativeScreenshot="239f0672b307694724aadb518210236c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='i-oneNGS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '라이센스 키'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="167a921b-102b-4c32-bb4f-02bb7560aca6" Text="TTqmLUqdq6kw/BXLhKh/0EGQuiUc1+OymlvoWWP8oFxdV6e9W96jh4gly+Ibs+Rv" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '라이센스 키'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="167a921b-102b-4c32-bb4f-02bb7560aca6" Text="TTqmLUqdq6kw/BXLhKh/0EGQuiUc1+OymlvoWWP8oFxdV6e9W96jh4gly+Ibs+Rv" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://172.16.10.103:9000/oper/systemConfig/etcConfig.do" CvElementArea="273, 610, 565, 37" CvType="InputBox" DesignTimeRectangle="275, 612, 562, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT licenseKey'" FullSelectorArgument="&lt;webctrl id='licenseKey' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='licenseKey' tag='INPUT' type='text' class='form-control' aaname='라이센스 키' /&gt;" Guid="4336bcfd-8eb7-4e33-8526-56009f3f0825" InformativeScreenshot="febbd8b00fa375ec9f768dd53e5d93fa.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='i-oneNGS' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CvTextArea="274, 588, 59, 14" CvTextArgument="20NA 7" CvType="Text" DesignTimeRectangle="275, 588, 58, 24" ElementType="Text" FriendlyName="'라이센스 키'" FullSelectorArgument="&lt;webctrl parentid='t4' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='t4' tag='LABEL' type='' class='pdb-10' aaname='라이센스 키' check:innerText='라이센스 키' /&gt;" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
+            <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="167a921b-102b-4c32-bb4f-02bb7560aca6" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://172.16.10.103:9000/oper/systemConfig/etcConfig.do" DesignTimeRectangle="1782, 542, 34, 34" DesignTimeScaleFactor="1" FriendlyName="'I'" FullSelectorArgument="&lt;webctrl parentid='t4' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='t4' tag='I' type='' class='icon-content-ref-n' aaname='' /&gt;" Guid="a138f13d-ae29-4e74-b8a0-15905a3db877" InformativeScreenshot="8f8c6e712967813dd3b13eb126d47f0d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='i-oneNGS' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
@@ -179,7 +180,7 @@
                   <uix:VerifyExecutionOptions.Target>
                     <uix:TargetAnchorable BrowserURL="https://172.16.10.103:9000/oper/systemConfig/etcConfig.do" CvElementArea="477, 846, 147, 37" CvType="InputBox" DesignTimeRectangle="479, 848, 144, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'1000'" FullSelectorArgument="&lt;webctrl id='systemCount' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='systemCount' tag='INPUT' type='text' class='form-control' aaname='' check:text='1000' /&gt;" Guid="7bf2aefc-6ded-46a2-bd40-1a1c8be830da" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJQAAAAmCAYAAAAiPrKqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL9SURBVHhe7ZzBS9tQHMf3T+byQAIlMCxCEMqgeJBBL150sDIMHnbpQC9hSHcZ6GEURkFyEGEIUpCIUISghGAv8t176XsxrWnn3FMq+/7gc0jf7/dy+fB7vxSSN2AwLAaFYliNSqFub29xc3ODJEkIeYByQzlSFRNC3d3d5clpmuYFo9GIkAcoN5QjyhXlTDkmhFIJWZZVbkLINMoV5Uw5CqGMdVWFhMzCnGYmCqHMuVhVRMgslDPlLlUIpYatqgJC/oRyxwSFIv8MhSJWoVDEKhSKWIVCEatQKGIVCkWsYkeoNMbJ989YX6nD3z2ZWEt+hWh5Ao4j4K620RvqtWyI3icfrnDgLHlofR0gNXWXPbRXXQjHgfBaCM/4r/1rwYpQSRQi2GnBVwLsRPdr1xGCmkBd/pZkMbprUqy1LoZyLd5vSpHW0T2X9UcBPMdFEClxZF5T7vO+izhLEG17cGoBonTynmQxsdOhcqQ800JJUYTjIxyMr9MfW7JTNdG91NJ86OmuNMDeiq696KIpu9lWT3elsz3U5XUQ6T3JQvOsQuVdSMjukumc8xCNXI5xbnM/LnL7H+XRp7qXlDCX7kLXZH20Ve63YZFLFpeXEcrk6O5TCFWSJNqeEupS1+h9KdTrgEIRqzyrUMXMZI6vflteq5lqPDM52yY3RtiQtWqmymcmB8GRrtHHZDFTkYXmWYUaXR1iQ8juks9KCXqbAqIRYiDXTr/op7drmScl8qU07Z9KmlN03jpwpWxqYB/s+vJpsI2+yjP7koXFglBjkZwJ7p/K4oMN1IWAt+xC1JroHOu9kxN03knBanV4SwL+5iFiPbwnxx005G/usgex5GPr4H54J4uNxQ41hyxFcpUgNU97JVJ5r6Sq+8ypIYvLywhF/hsoFLEKhSJWoVDEKhSKWIVCEatUCsUXPclTmPmip1rgq+jkb5n5KroKZRo/lkEey9yPZajg53zIYzCnmXJl7ud8TJhzUQ1bhEyj3Cgfc+WoFIrBeGpQKIbFAH4DCPcaTBbXWUMAAAAASUVORK5CYII=" InformativeScreenshot="d596a2632d35eeb69c43611f7b55df8e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='i-oneNGS' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                       <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                           <uix:Target CvTextArea="478, 823, 23, 14" CvTextArgument="A|H" CvType="Text" DesignTimeRectangle="479, 823, 22, 24" ElementType="Text" FriendlyName="'서버'" FullSelectorArgument="&lt;webctrl aaname='서버' parentid='t4' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='서버' parentid='t4' tag='LABEL' type='' class='pdb-10' check:innerText='서버' /&gt;" SearchSteps="FuzzySelector, CV" />
                         </scg:List>
                       </uix:TargetAnchorable.Anchors>
